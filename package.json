@@ -55,5 +55,15 @@
     "nodemon": "^2.0.4",
     "prettier": "^2.1.1",
     "vue-jest": "^3.0.3"
-  }
+  },
+  "main": ".eslintrc.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mugas/ricardo.git"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mugas/ricardo/issues"
+  },
+  "homepage": "https://github.com/mugas/ricardo#readme"
 }
