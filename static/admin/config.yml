@@ -3,6 +3,12 @@ backend:
   branch: main
 publish_mode: editorial_workflow
 media_folder: 'static/images/uploads'
+media_library:
+  name: cloudinary
+  config:
+    cloud_name: mugas
+    api_key: 337512876763955
+    output_filename_only: true
 public_folder: '/images/uploads'
 collections:
   - name: 'blog'
