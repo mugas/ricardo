@@ -1,5 +1,5 @@
 import blogs from './content/blogs.json'
-// import codings from './content/codings.json'
+import codings from './content/codings.json'
 
 export default {
   mode: 'universal',
@@ -178,7 +178,7 @@ export default {
   generate: {
     routes: [
       [].concat(blogs.map((blog) => `/blog/${blog.slug}`)),
-      // [].concat(codings.map((coding) => `/coding/${coding.slug}`)),
+      [].concat(codings.map((coding) => `/coding/${coding.slug}`)),
     ],
   },
 
