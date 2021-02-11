@@ -38,7 +38,7 @@
         </template>
 
         <template v-slot:back>
-          <img class="about__image" :src="aboutPage.thumbnail" />
+          <img class="about__image" src="~/assets/images/me.jpg" />
           <p class="about__text">
             Hi, my name is Ricardo. I am a web developer living in Finland. Also
             I spent years in the hospitality business and led and helped teams
