@@ -1,145 +1,249 @@
-<template>
-  <div>
-    <Container>
-      <Hero class="background" />
-      <h1>Digital presence for your business</h1>
-    </Container>
-    <section>
-      <Container class="button">
-        <nuxt-link to="/services"> <button>Services</button></nuxt-link>
-        <nuxt-link to="/contact"> <button>Contact</button></nuxt-link>
-        <nuxt-link to="/coding"> <button>Coding</button></nuxt-link>
-      </Container>
-      <Container flex class="blog">
-        <ArticleCard
-          v-for="(blog, index) in blogList"
-          :key="index"
-          :index="index"
-          :article-info="blog"
-        />
-        <nuxt-link to="/blog"
-          ><p class="posts">See all of ours posts</p></nuxt-link
-        >
-      </Container>
-    </section>
+<template lang="html" class="homepage">
+  <div class="main">
+    <h1>
+      <span class="main__bounce-second">L</span
+      ><span class="main__bounce-third">oo</span
+      ><span class="main__letter-k">k</span
+      ><span class="main__king-word">ing</span>
+      <span class="main__bounce-first">f</span>or Me<span
+        class="main__question-mark"
+        >?</span
+      >
+    </h1>
+    <p>I create things and stuff</p>
   </div>
 </template>
 
-<script>
-import ArticleCard from '~/components/ArticleCard'
-import Container from '~/components/Container'
-
-import blogs from '~/content/blogs.json'
-
-export default {
-  components: {
-    ArticleCard,
-    Container,
-  },
-
-  async asyncData({ app }) {
-    async function awaitImport(blog) {
-      const wholeMD = await import(`~/content/blog/${blog.slug}.md`)
-      return {
-        attributes: wholeMD.attributes,
-        link: blog.slug,
-      }
-    }
-
-    const blogList = await Promise.all(
-      blogs.slice(0, 2).map((blog) => awaitImport(blog))
-    ).then((res) => {
-      return {
-        blogList: res,
-      }
-    })
-
-    return blogList
-  },
+<style lang="css" scoped>
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  padding-top: 10px;
 }
-</script>
 
-<style scoped>
-.background {
-  background-color: #edbd54;
-  margin-top: 5%;
-}
+html,
 body {
   margin: 0;
   padding: 0;
-  width: 100vw;
-  height: 100vh;
-  overflow: hid;
 }
 
-.button {
+.main {
+  background: url('../assets/me.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin-left: 2%;
+  margin-right: 2%;
+  height: 85vh;
+  margin-top: 6%;
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
-  margin-bottom: 20px;
-  margin-top: 20px;
 }
 
 h1 {
-  margin-top: 0;
-  line-height: 2.1;
-  color: #28430a;
+  text-align: center;
+  font-size: 32px;
+  color: #a64e43;
 }
 
-button {
-  border: 0;
-  background: transparent;
-  border-radius: 0;
-  font-weight: inherit;
-  letter-spacing: inherit;
-  line-height: inherit;
-  text-transform: inherit;
-  background-color: #793000;
-  color: #fff;
+p {
+  text-align: center;
+  color: #eceee5;
+  font-family: 'Inknut Antiqua', serif;
+  overflow: hidden; /* content is not revealed until the animation */
+  border-right: 0.09em solid #a64e43; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.12em;
+  animation: typing 6.5s steps(40, end), blinking 0.5s step-end infinite;
+}
 
-  position: relative;
-  z-index: 0;
+.main__letter-k {
+  color: #a64e43;
+}
+
+.main__king-word {
+  color: #a64e43;
+}
+
+.main__question-mark {
+  color: #a64e43;
+  -webkit-animation: bounce-in-top 1s 11s both;
+  animation: bounce-in-top 1s 11s both;
   display: inline-block;
-  overflow: hidden;
-  font-size: 1rem;
-  /* padding: 14.00778px 20px; */
-  /* padding: 14.00778px -1px; */
-  border-radius: 2em;
-  cursor: pointer;
-}
-.posts {
-  font-weight: bold;
-  text-decoration: underline;
-}
-.blog {
-  display: flex;
-  flex-direction: column;
 }
 
-@media (min-width: 720px) {
-  button {
-    border: 0;
-    background: transparent;
-    border-radius: 0;
-    font-weight: inherit;
-    letter-spacing: inherit;
-    line-height: inherit;
-    text-transform: inherit;
-    background-color: #793000;
-    color: #fff;
-    position: relative;
-    z-index: 0;
-    display: inline-block;
-    overflow: hidden;
-    font-size: 1.125rem;
-    padding: 14.00778px 20px;
-    border-radius: 2em;
-    cursor: pointer;
+.main__bounce-first {
+  -webkit-animation: bounce-in-top 7.1s both;
+  animation: bounce-in-top 7.1s both;
+  display: inline-block;
+  color: #a64e43;
+}
+
+.main__bounce-second {
+  -webkit-animation: bounce-in-top 10.1s both;
+  animation: bounce-in-top 10.1s both;
+  display: inline-block;
+  color: #a64e43;
+}
+
+.main__bounce-third {
+  -webkit-animation: bounce-in-top 1s 10s both;
+  animation: bounce-in-top 1s 10s both;
+  display: inline-block;
+  color: #a64e43;
+}
+
+/*Animation*/
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
   }
 }
 
-@media (max-width: 992px) {
+/* The typewriter cursor effect */
+@keyframes blinking {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #a64e43;
+  }
+  100% {
+    border-color: transparent;
+  }
+}
+
+@-webkit-keyframes bounce-in-top {
+  0% {
+    -webkit-transform: translateY(-500px);
+    transform: translateY(-500px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+  38% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+    opacity: 1;
+  }
+  55% {
+    -webkit-transform: translateY(-65px);
+    transform: translateY(-65px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  72% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  81% {
+    -webkit-transform: translateY(-28px);
+    transform: translateY(-28px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  90% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  95% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+}
+
+@keyframes bounce-in-top {
+  0% {
+    -webkit-transform: translateY(-500px);
+    transform: translateY(-500px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+  38% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+    opacity: 1;
+  }
+  55% {
+    -webkit-transform: translateY(-65px);
+    transform: translateY(-65px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  72% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  81% {
+    -webkit-transform: translateY(-28px);
+    transform: translateY(-28px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  90% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  95% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+}
+
+/*Media Queries*/
+
+@media (min-width: 768px) {
   h1 {
-    font-size: larger;
+    text-align: center;
+    font-size: 150px;
+  }
+
+  p {
+    font-size: 10vh;
+  }
+
+  .main {
+    flex-direction: column;
+    justify-content: space-between;
   }
 }
 </style>

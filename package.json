@@ -30,6 +30,7 @@
     "prismjs": "^1.16.0",
     "sass-loader": "^10.0.2",
     "share-this": "^1.2.2",
+    "vue-flip": "^1.0.2",
     "vue-lazyload": "^1.2.6",
     "vue-sharethis": "0.0.1"
   },
