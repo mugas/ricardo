@@ -143,6 +143,10 @@ export default {
           'faYarn',
         ],
       },
+      {
+        set: '@fortawesome/free-solid-svg-icons',
+        icons: ['fas'],
+      },
     ],
   },
 
