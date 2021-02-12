@@ -9,7 +9,7 @@
       >
         <template v-slot:front>
           <h1 class="about__title">Good Stuff Creations</h1>
-          <img class="gsfood" src="../../assets/svg/gscoding.svg" />
+          <img class="gsfood" src="../../assets/Svg/gscoding.svg" />
         </template>
 
         <template v-slot:back>
@@ -39,7 +39,7 @@
       >
         <template v-slot:front>
           <h1 class="about__title">Good Stuff Foods</h1>
-          <img class="gsfood" src="../../assets/svg/gsfood.svg" />
+          <img class="gsfood" src="../../assets/Svg/gsfood.svg" />
         </template>
 
         <template v-slot:back>
