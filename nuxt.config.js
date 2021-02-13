@@ -109,8 +109,8 @@ export default {
     '@nuxtjs/pwa',
     '@nuxtjs/sitemap',
     '@nuxtjs/robots',
-    'nuxt-fontawesome',
     'nuxt-webfontloader',
+    'nuxt-fontawesome',
   ],
 
   /**
@@ -142,10 +142,6 @@ export default {
           'faNodeJs',
           'faYarn',
         ],
-      },
-      {
-        set: '@fortawesome/free-solid-svg-icons',
-        icons: ['faGlobe'],
       },
     ],
   },
