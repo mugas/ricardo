@@ -141,6 +141,8 @@ export default {
           'faWordpress',
           'faNodeJs',
           'faYarn',
+          'faFirefox',
+          'faLinkedin',
         ],
       },
     ],

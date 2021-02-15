@@ -17,58 +17,42 @@
         </div>
         <div class="text">
           <p>
-            My name is Ricardo Moreira and I am a Web developer. I was born in
-            Portugal but I live in Finland with my wife and 2 daughters. Good
-            Stuff Creations was created for 2 main reasons: A web more
-            accessible and sustainable for all focused on the
-            <nuxt-link to="/services">Hospitality</nuxt-link>
-            business, and <nuxt-link to="/coding">tutorials</nuxt-link>,
-            courses, and e-books for parents and/or people with a day-job that
-            want to learn to code.
+            My name is Ricardo Moreira and I am a Web developer and
+            entrepreneur. I was born in Portugal but I live in Finland with my
+            wife and 2 daughters. As a web developer I created
+            <a href="http://gscreations.io/"> Good Stuff Creations</a>.
           </p>
           <p>
-            Before I learn web development, I spent many years working for
-            hospitality. From bars, hotel to restaurants, from waiter to kitchen
-            helper, manager, or owner I did a bit of all. Every day more the
-            world is getting more digital and many companies are still lacking
-            in this aspect, only having their digital presence in a Social Media
-            that they can't control or have an old website that doesn't deliver
-            the results it should. I want to help close that gap. With your
-            help, and my knowledge from both sides ( web development and
-            hospitality) I can deliver you a
-            <nuxt-link to="/services">solution</nuxt-link> that helps you
-            business grows, either by creating a new website or finding the best
-            digital strategy for your company. Lately, I have been focusing in
-            accessibility and sustainability(yes your website can and it should
-            be more sustainable) and the more I know the more I find it
-            important to create digital solutions that are better for all and
-            that reduce your carbon footprint.
+            There I create web products mostly for small business, helping them
+            to grow their presence online, with websites, digital markketing and
+            SEO. I also create tutorials about coding where hopefully I can help
+            someone to learn something about coding. As a parent who had(has)
+            day job was a challenge to find the time to code while have to work
+            and spending time with the kids and wife, so I pretend to help any
+            coding parent out there.
           </p>
           <p>
-            I'm not a developer by trade. I learn on my "own"(thank you internet
-            and all great programming courses out there) while having a shift
-            job and being a parent and it's not an easy road but it's a
-            possible, challenging, and worth take it on. So I know that are many
-            people like me, parents or not that have a day job and are new to
-            coding but want to learn to code because they want to get into this
-            career, because they have a great business idea and learning to code
-            helps them achieve that or just because. Without a network, and with
-            few free time can be daunting, so I want that my
-            <nuxt-link to="/coding">tutorials</nuxt-link> and courses can help a
-            bit your road to reach your goal. Also, feel free to connect with me
+            Web development was not always my life as I spent many years working
+            for hospitality. From bars, hotel to restaurants, from waiter to
+            kitchen helper, manager, or owner I did a bit of all. So even that I
+            work in web development I still work in hospitality as a Manager in
+            a Restaurant.
+          </p>
+          <p>
+            As a kid in a toy store, I easily get interested about new projects
+            and ideas, so I am preparing a new project this one more food based
+            and focused in local produce. In this webpage you can get to know a
+            bit more about my projects and also about other things that interest
+            me like music, food and other subjects. Keep an eye on my
+            <nuxt-link to="/blog"> Blog</nuxt-link> as I try to updated weekly.
+            feel free to connect with me
             <nuxt-link to="/contact">here</nuxt-link> or with the
             <a href="https://twitter.com/mugas11">bluebird</a>
             help for any question that may arise you.
           </p>
-          <p>
-            You can learn more about me in my personal
-            <a href="http://ricardomoreira.io/">website</a> and follow my and
-            Good Stuff Creations social media.
-          </p>
         </div>
       </article>
     </div>
-    <footer></footer>
   </div>
 </template>
 
@@ -125,13 +109,13 @@ a:hover {
   }
 
   .action {
-    color: #793000;
+    color: #28430a;
     font-size: 3.5vw;
     filter: brightness(2);
   }
 }
 aside {
-  background-color: #28430a;
+  background-color: #793000;
   color: white;
   display: flex;
   flex-direction: column;
@@ -142,7 +126,7 @@ aside {
 
 @media (min-width: 700px) {
   aside {
-    background-color: #28430a;
+    background-color: #793000;
     color: white;
     display: flex;
     flex-direction: column;

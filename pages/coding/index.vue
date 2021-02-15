@@ -7,10 +7,10 @@
     </Container>
     <Container flex>
       <Coding
-        v-for="(coding, index) in codingList"
+        v-for="(blog, index) in codingList"
         :key="index"
         :index="index"
-        :article-info="coding"
+        :article-info="blog"
       />
     </Container>
   </section>

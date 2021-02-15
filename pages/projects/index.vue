@@ -1,5 +1,6 @@
 <template>
   <section>
+    <h1>Learn more about my business created and the ones in development</h1>
     <div class="about__cards">
       <vue-flip
         class="about__single-card"
@@ -13,17 +14,17 @@
         </template>
 
         <template v-slot:back>
-          <p>
+          <p class="about__text">
             Good Stuff Creations is focused in web development. There I create
             web-apps focused in small business, helping them and their brand to
             grow digitally.
           </p>
-          <p>
+          <p class="about__text">
             This can be made with web site creation and development.I also
             develop digital marketing and content creation strategies and
             opportunities.
           </p>
-          <p>
+          <p class="about__text">
             Because of my strong background in hospitality I developed a special
             package focused in hospitality business
           </p>
@@ -43,49 +44,15 @@
         </template>
 
         <template v-slot:back>
-          <img class="about__image" src="~/assets/images/me.jpg" />
           <p class="about__text">
-            Hi, my name is Ricardo. I am a web developer living in Finland. Also
-            I spent years in the hospitality business and led and helped teams
-            to achieve success and had my share of entrepreneurship in different
-            countries. Since 2018 I've been learning and working with web
-            development and doing freelance on the side
+            Still in development. The idea has been changing lately and in
+            November 2020 I was in a program at the
+            <a href="https://theshortcut.org/">Shortcut</a> to develop my idea.
           </p>
-        </template>
-      </vue-flip>
-
-      <vue-flip
-        class="about__single-card"
-        active-click
-        width="350px"
-        height="450px"
-      >
-        <template v-slot:front class="front">
-          <!-- <img class="about__image" :src="aboutPage.thumbnail"> -->
-          <h1 class="about__title">What Now</h1>
-          <SocialMedia class="main__media" />
-        </template>
-        <template v-slot:back class="about__back">
-          <p class="about__what-now about__margin-top">
-            Nowadays I've been mostly working and learning more about front end
-            development and search for the first opportunity to work in the
-            area.<span class="about__color-text"
-              >If you have a job or project
-              <nuxt-link to="/contact" class="about__contact"
-                >let's talk</nuxt-link
-              >
-              about it and make it happen</span
-            >
-          </p>
-          <p class="about__what-now">
-            I write about front end development(but not only). You can read them
-            on my website but also in
-            <a href="https://dev.to/mugas">dev.to</a> and
-            <a href="https://medium.com/@ricardo.d.moreira.rm">Medium</a>.
-          </p>
-          <p class="about__what-now">
-            Also I been planning my next business/app idea, but can't say more
-            for now because it's still only an idea
+          <p class="about__text">
+            It's focused in local products and sustainability but in a fun and
+            tasty way. Feel free to contact me if you want to know more but I
+            will keep you posted with updates here.
           </p>
         </template>
       </vue-flip>
@@ -95,12 +62,10 @@
 
 <script>
 import Vueflip from 'vue-flip'
-import SocialMedia from '../../components/SocialMedia/SocialMedia'
 
 export default {
   components: {
     'vue-flip': Vueflip,
-    SocialMedia,
   },
 }
 </script>
@@ -156,8 +121,8 @@ export default {
 
 h1 {
   color: rgb(200, 136, 45);
-  margin: 0 auto;
-  font-size: 52px;
+  text-align: center;
+
   font-family: 'Inknut Antiqua', serif;
 }
 

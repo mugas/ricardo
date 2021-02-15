@@ -38,6 +38,7 @@
 h1 {
   color: #28430a;
   margin-bottom: 2rem;
+  text-align: center;
   margin-top: 2rem;
 }
 

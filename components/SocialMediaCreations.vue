@@ -12,9 +12,9 @@
         </a>
       </li>
       <li>
-        <a href="http://gscreations.io/" target="_blank"
-          ><font-awesome-icon :icon="['fas', 'globe']"
-        /></a>
+        <a href="http://gscreations.io/" target="_blank">
+          <font-awesome-icon :icon="['fab', 'firefox']" />
+        </a>
       </li>
     </ul>
   </nav>
@@ -34,6 +34,7 @@ ul {
 a {
   padding: 1rem;
   text-decoration: none;
+  color: rgb(200, 136, 45);
 }
 
 li :first-child {
@@ -43,5 +44,6 @@ li :first-child {
 .social-media {
   display: flex;
   padding-left: 0;
+  justify-content: center;
 }
 </style>
