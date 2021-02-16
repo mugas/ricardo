@@ -17,7 +17,7 @@ export default {
       },
     ],
 
-    title: 'Good Stuff Creations – web development and coding tutorials',
+    title: 'Talking about code, cooking and more',
     meta: [
       {
         charset: 'utf-8',
@@ -29,24 +29,22 @@ export default {
       {
         hid: 'og:url',
         property: 'og:url',
-        content: `http://gscreations.io/`,
+        content: `http://ricardomoreira.io/`,
       },
       {
         hid: 'og:title',
         property: 'og:title',
-        content: 'Good Stuff Creations - web development and coding tutorials',
+        content: 'Talking about code, cooking and more',
       },
       {
         hid: 'description',
         name: 'description',
-        content:
-          'Good stuff creations helps your hospitality business grow with a new website and a strong digital presence',
+        content: 'Talking about code, cooking and more',
       },
       {
         hid: 'og:description',
         property: 'og:description',
-        content:
-          'Good stuff creations helps your hospitality business grow with a new website and a strong digital presence',
+        content: 'Talking about code, cooking and more',
       },
       {
         hid: 'og:image:alt',
@@ -68,7 +66,7 @@ export default {
         property: 'og:type',
         content: 'website',
       },
-      { name: 'twitter:site', content: '@g_s_creations' },
+      { name: 'twitter:site', content: '@mugas11' },
       {
         hid: 'twitter:card',
         name: 'twitter:card',
@@ -77,7 +75,7 @@ export default {
       {
         hid: 'twitter:title',
         name: 'twitter:title',
-        content: 'Good Stuff Creations - web development and coding tutorials',
+        content: 'Talking about code, cooking and more',
       },
       {
         hid: 'twitter:description',
