@@ -23,7 +23,7 @@ So what we are going to build? A page with music albums covers and when flipping
 * [Project page](https://goodstuffmusicalbum.netlify.app/)
 * [GitHub page](https://github.com/mugas/Movie-hero)
 * [Code Pen](https://codepen.io/collection/DrpKdj)
-* You also can read it [here](https://dev.to/mugas/flip-cards-with-javascript-2ad0) and [here](https://medium.com/@ricardo.d.moreira.rm/flip-cards-with-javascript-e06971d82f50)
+
 
 So first let's build our html.
 
