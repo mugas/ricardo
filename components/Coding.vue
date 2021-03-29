@@ -94,7 +94,7 @@ export default {
     top: 0;
     color: #fff;
     box-shadow: none;
-    background: #edbd54;
+
     transition: 0.2s ease all;
     &:hover {
       background: rgba(0, 0, 0, 0.05);
@@ -134,6 +134,9 @@ export default {
     a {
       color: #252525;
     }
+  }
+  &.nuxtjs {
+    background-color: #28430a;
   }
   &.other {
     background-color: #ff8c42;
