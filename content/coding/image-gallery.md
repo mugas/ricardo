@@ -27,7 +27,7 @@ A Image gallery responsive made with CSS grid and Flexbox. The number of columns
 
 * [Project page](https://goodstuffoodsgallery.netlify.app/)
 * [GitHub page](https://github.com/mugas/Image-Gallery)
-* [Tutorial](https://www.ricardomoreira.io/blog/2020-05-28-create-a-image-gallery)
+* [Tutorial](https://www.ricardomoreira.io/coding/create-a-image-gallery/)
 * [Code Pen](https://codepen.io/mugas/pen/gOaJeMm)
 * [Video](https://www.youtube.com/watch?v=URXj6jZeCz0)
-* You also can read it [here](https://dev.to/mugas/create-a-image-gallery-with-css-grid-and-flebox-5lo), [here](https://www.linkedin.com/pulse/create-image-gallery-grid-flexbox-ricardo-moreira/?trackingId=qSKl%2FvzkSw2hFO3BufXw4w%3D%3D) and [here](https://medium.com/@ricardo.d.moreira.rm/create-a-image-gallery-with-css-grid-and-flexbox-c9d44c6d7788)
+
