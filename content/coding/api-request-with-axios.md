@@ -33,7 +33,7 @@ So ready to go to moon and back?
 * [Project page](https://nasaapiaxios.netlify.app/)
 * [GitHub page](https://github.com/mugas/Blog-Post/tree/master/Nasa%20API)
 * [Code Pen](https://codepen.io/collection/AdQGRM)
-* You also can read it [here](https://dev.to/mugas/make-a-api-request-using-axios-and-nasa-api-5h11) and [here](https://medium.com/@ricardo.d.moreira.rm/make-a-api-request-using-axios-and-nasa-api-8af4925acc4f)
+
 
 ## **What is an API?**
 
