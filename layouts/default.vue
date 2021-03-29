@@ -1,6 +1,7 @@
 <template>
   <div>
-    <TheHeader />
+    <TheHeader @sidenavToggle="displaySidenav = !displaySidenav" />
+    <TheSidenav :show="displaySidenav" @close="displaySidenav = false" />
     <main class="main-content">
       <nuxt />
     </main>
@@ -8,11 +9,11 @@
 </template>
 
 <script>
-import TheHeader from '../components/TheHeader/TheHeader'
-
 export default {
-  components: {
-    TheHeader,
+  data() {
+    return {
+      displaySidenav: false,
+    }
   },
 }
 </script>
