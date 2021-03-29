@@ -37,7 +37,7 @@ If you want to see the code right away, jump to video or final project, follow t
 * [GitHub page](https://github.com/mugas/Image-Gallery)
 * [Code Pen](https://codepen.io/collection/nmpBGo)
 * [Video](https://www.youtube.com/watch?v=URXj6jZeCz0)
-* You also can read it [here](https://dev.to/mugas/create-a-image-gallery-with-css-grid-and-flebox-5lo), [here](https://medium.com/@ricardo.d.moreira.rm/create-a-image-gallery-with-css-grid-and-flexbox-c9d44c6d7788) and [here](https://www.linkedin.com/pulse/create-image-gallery-grid-flexbox-ricardo-moreira/?trackingId=9klHMpFrQ8u7U54KPLus6g%3D%3D)
+
 
 
 
