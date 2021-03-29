@@ -2,7 +2,7 @@
   <section>
     <Container>
       <div class="intro">
-        <h1>Welcome to Coding Names</h1>
+        <h1>Tutorials, snippets, small tips and more</h1>
       </div>
     </Container>
     <Container flex>
