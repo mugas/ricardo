@@ -26,6 +26,5 @@ A Page with Album covers that when pressed is fliped/turned and show the other s
 
 * [Project page](https://goodstuffmusicalbum.netlify.app/)
 * [GitHub page](https://github.com/mugas/Movie-hero)
-* [Tutorial](https://www.gscreations.io/blog/flip-cards-with-javascript)
+* [Tutorial](https://www.ricardomoreira.io/coding/flip-cards-with-javascript/)
 * [Code Pen](https://codepen.io/collection/DrpKdj)
-* You also can read it [here](https://dev.to/mugas/flip-cards-with-javascript-2ad0) and [here](https://medium.com/@ricardo.d.moreira.rm/flip-cards-with-javascript-e06971d82f50) 
