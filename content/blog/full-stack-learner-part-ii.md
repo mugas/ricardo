@@ -4,13 +4,13 @@ language: learning
 title: Full Stack Learner (Part II)
 summary: >
   And going again...This post is the second part of [this
-  one](https://www.ricardomoreira.io/blog/2020-05-25-full-stack-learner-part-i)
+  one](https://www.ricardomoreira.io/blog/full-stack-learner-part-i/)
 date: 2018-10-22T06:03:06.803Z
 update: 2021-02-02T07:03:06.836Z
 author: Ricardo Moreira
 thumbnail: https://res.cloudinary.com/mugas/image/upload/v1590485550/0_O9YIgTNpJ70kHWbH_lsiwri.jpg
 ---
-This post is the second part of [this one](https://www.ricardomoreira.io/blog/2020-05-25-full-stack-learner-part-i)
+This post is the second part of [this one](https://www.ricardomoreira.io/blog/full-stack-learner-part-i/)
 
 **3. Stick with it**
 
