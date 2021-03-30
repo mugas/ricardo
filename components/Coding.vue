@@ -72,10 +72,6 @@ export default {
 </script>
 
 <style lang="scss">
-.testing {
-  border: 1px solid red;
-  width: 100px;
-}
 .article-card {
   display: flex;
   flex-direction: column;
