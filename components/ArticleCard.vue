@@ -94,7 +94,7 @@ export default {
     top: 0;
     color: #fff;
     box-shadow: none;
-    background: #edbd54;
+    background: rgba(0, 0, 0, 0);
     transition: 0.2s ease all;
 
     &:hover {
