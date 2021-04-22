@@ -1,18 +1,38 @@
 <template lang="html" class="homepage">
-  <div class="main">
-    <h1>
-      <span class="main__bounce-second">L</span
-      ><span class="main__bounce-third">oo</span
-      ><span class="main__letter-k">k</span
-      ><span class="main__king-word">ing</span>
-      <span class="main__bounce-first">f</span>or Me<span
-        class="main__question-mark"
-        >?</span
-      >
-    </h1>
-    <p>I create things and stuff</p>
+  <div>
+    <h1 class="title">I create things and stuff</h1>
+    <p class="bio">
+      <span class="action"> {{ actions[0] }}</span>
+    </p>
   </div>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      actions: [
+        'Podcasts',
+        'Websites',
+        'Food Development',
+        'Writing',
+        'Courses',
+      ],
+    }
+  },
+  mounted() {
+    window.setInterval(() => {
+      this.pollPerson()
+    }, 3000)
+  },
+  methods: {
+    pollPerson() {
+      const first = this.actions.shift()
+      this.actions = this.actions.concat(first)
+    },
+  },
+}
+</script>
 
 <style lang="css" scoped>
 * {
@@ -29,14 +49,15 @@ body {
 }
 
 .main {
-  background: url('../assets/me.jpg') no-repeat center center fixed;
+  /* background: url('../assets/me.jpg') no-repeat center center fixed;*/
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  background-color: blue;
   margin-left: 2%;
   margin-right: 2%;
-  height: 85vh;
+  height: 64vh;
   margin-top: 6%;
   display: flex;
   flex-direction: column;
@@ -49,10 +70,13 @@ h1 {
   color: #a64e43;
 }
 
-p {
+.bio {
+  margin: 0 20px;
   text-align: center;
-  color: #eceee5;
-  font-family: 'Inknut Antiqua', serif;
+  line-height: 1.5;
+  font-style: italic;
+}
+.title {
   overflow: hidden; /* content is not revealed until the animation */
   border-right: 0.09em solid #a64e43; /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
@@ -234,7 +258,7 @@ p {
 @media (min-width: 768px) {
   h1 {
     text-align: center;
-    font-size: 150px;
+    font-size: 85px;
   }
 
   p {
