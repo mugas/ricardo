@@ -32,7 +32,7 @@ body {
   padding: 0;
 }
 
-.main-content {
+/* .main-content {
   margin-top: 4.5rem;
-}
+} */
 </style>

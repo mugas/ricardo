@@ -1,21 +1,32 @@
 <template lang="html" class="homepage">
   <div>
-    <h1 class="title">I create things and stuff</h1>
-    <p class="bio">
-      <span class="action"> {{ actions[0] }}</span>
-    </p>
+    <header class="header">
+      <h1 class="title">
+        I create <span class="action">{{ actions[0] }} </span>and stuff
+      </h1>
+      <p class="subtitle">Developer, entrepreneur and constant learner</p>
+      <button>Let's Work together</button>
+    </header>
+    <section class="stuff">
+      <article class="websites"><h2>Good Stuff Creations</h2></article>
+      <article class="podcasts"><h2>Good Stuff Creations</h2></article>
+      <article class="food"><h2>Good Stuff Creations</h2></article>
+    </section>
   </div>
 </template>
 
 <script>
 export default {
+  layout: 'empty',
   data() {
     return {
       actions: [
+        'Things',
         'Podcasts',
         'Websites',
-        'Food Development',
+        'Food',
         'Writing',
+        'Code',
         'Courses',
       ],
     }
@@ -35,6 +46,82 @@ export default {
 </script>
 
 <style lang="css" scoped>
+.websites {
+  color: white;
+  background-color: green;
+  margin-left: 2%;
+  margin-right: 2%;
+  height: 40vh;
+  width: 100%;
+}
+.stuff {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100vh;
+  justify-content: space-between;
+}
+.podcasts {
+  background-color: yellow;
+  margin-left: 2%;
+  margin-right: 2%;
+  height: 40vh;
+  width: 40%;
+}
+.subtitle {
+  margin-left: 5%;
+  padding-bottom: 8%;
+  font-size: 6vh;
+  color: white;
+}
+.food {
+  background-color: brown;
+  margin-left: 2%;
+  margin-right: 2%;
+  height: 40vh;
+  width: 40%;
+}
+.action {
+  color: yellow;
+}
+
+button {
+  border: 0;
+  background: transparent;
+  border-radius: 0;
+  margin-top: 3%;
+  margin-left: 5%;
+  font-weight: inherit;
+  letter-spacing: inherit;
+  line-height: inherit;
+  text-transform: inherit;
+  background-color: white;
+  color: #000;
+  position: relative;
+  z-index: 0;
+  display: inline-block;
+  overflow: hidden;
+  font-size: 1rem;
+  padding: 14.00778px 20px;
+  border-radius: 2em;
+  width: 15%;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+button:hover {
+  background-color: transparent;
+  color: yellow;
+  border: 2px solid yellow;
+  font-size: 1rem;
+  width: 20%;
+}
+
+button:active {
+  background-color: transparent;
+  color: yellow;
+  border: 2px solid yellow;
+  font-size: 1rem;
+  width: 20%;
+}
 * {
   box-sizing: border-box;
   padding: 0;
@@ -46,28 +133,23 @@ html,
 body {
   margin: 0;
   padding: 0;
+  height: 100%;
 }
 
-.main {
-  /* background: url('../assets/me.jpg') no-repeat center center fixed;*/
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  background-color: blue;
-  margin-left: 2%;
-  margin-right: 2%;
-  height: 64vh;
-  margin-top: 6%;
+.header {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  /* background-color: black; */
+  margin-left: 2%;
+  margin-right: 2%;
+  height: 80vh;
+  background-color: #000000;
+  background-image: linear-gradient(147deg, #000000 0%, #434343 74%);
 }
 
 h1 {
-  text-align: center;
   font-size: 32px;
-  color: #a64e43;
+  color: white;
 }
 
 .bio {
@@ -77,12 +159,15 @@ h1 {
   font-style: italic;
 }
 .title {
+  margin-left: 5%;
+  font-size: 10vh;
   overflow: hidden; /* content is not revealed until the animation */
-  border-right: 0.09em solid #a64e43; /* The typwriter cursor */
+  /*border-right: 0.09em solid #a64e43; The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  /* margin: 0 auto; Gives that scrolling effect as the typing happens */
   letter-spacing: 0.12em;
   animation: typing 6.5s steps(40, end), blinking 0.5s step-end infinite;
+  width: 87%;
 }
 
 .main__letter-k {
@@ -129,7 +214,7 @@ h1 {
     width: 0;
   }
   to {
-    width: 100%;
+    width: 60%;
   }
 }
 
@@ -257,12 +342,7 @@ h1 {
 
 @media (min-width: 768px) {
   h1 {
-    text-align: center;
-    font-size: 85px;
-  }
-
-  p {
-    font-size: 10vh;
+    font-size: 45px;
   }
 
   .main {
