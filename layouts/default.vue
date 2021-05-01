@@ -5,6 +5,7 @@
     <main class="main-content">
       <nuxt />
     </main>
+    <Footer />
   </div>
 </template>
 

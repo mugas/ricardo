@@ -8,9 +8,23 @@
       <button>Let's Work together</button>
     </header>
     <section class="stuff">
-      <article class="websites"><h2>Good Stuff Creations</h2></article>
-      <article class="podcasts"><h2>Good Stuff Creations</h2></article>
-      <article class="food"><h2>Good Stuff Creations</h2></article>
+      <h2>Some of my projects</h2>
+      <article class="websites card">
+        <h3>Good Stuff Creations</h3>
+        <p class="websites__paragraph">
+          Website and digital products for local producers and groceries
+        </p>
+        <button>To the Website</button>
+        <p class="card__footer">Web development, Wordpress, SEO</p>
+      </article>
+      <article class="podcasts card">
+        <h3>Podcast</h3>
+        <p class="websites__paragraph">Coming Soon</p>
+      </article>
+      <article class="food card">
+        <h3>Good Stuff Foods</h3>
+        <p class="websites__paragraph">Coming Soon</p>
+      </article>
     </section>
   </div>
 </template>
@@ -46,39 +60,56 @@ export default {
 </script>
 
 <style lang="css" scoped>
-.websites {
-  color: white;
-  background-color: green;
-  margin-left: 2%;
-  margin-right: 2%;
-  height: 40vh;
-  width: 100%;
+/*General*/
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  padding-top: 10px;
 }
-.stuff {
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+/*Header*/
+
+.header {
   display: flex;
-  flex-wrap: wrap;
-  height: 100vh;
-  justify-content: space-between;
-}
-.podcasts {
-  background-color: yellow;
+  flex-direction: column;
+  /* background-color: black; */
   margin-left: 2%;
   margin-right: 2%;
-  height: 40vh;
-  width: 40%;
+  height: 67vh;
+  background-color: #000000;
+  background-image: linear-gradient(147deg, #000000 0%, #434343 74%);
 }
+
+.title {
+  margin-left: 5%;
+  font-size: 32px;
+  overflow: hidden; /* content is not revealed until the animation */
+  /*border-right: 0.09em solid #a64e43; The typwriter cursor */
+  /* white-space: nowrap; Keeps the content on a single line */
+  /* margin: 0 auto; Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.12em;
+  animation: typing 6.5s steps(40, end), blinking 0.5s step-end infinite;
+  width: 93%;
+  line-height: 50px;
+  padding-bottom: 32px;
+  color: white;
+}
+
 .subtitle {
   margin-left: 5%;
   padding-bottom: 8%;
-  font-size: 6vh;
+  font-size: 18px;
+  line-height: 26px;
   color: white;
-}
-.food {
-  background-color: brown;
-  margin-left: 2%;
-  margin-right: 2%;
-  height: 40vh;
-  width: 40%;
+  padding-bottom: 52px;
 }
 .action {
   color: yellow;
@@ -103,7 +134,7 @@ button {
   font-size: 1rem;
   padding: 14.00778px 20px;
   border-radius: 2em;
-  width: 15%;
+  width: 59%;
   cursor: pointer;
   transition: all 0.5s;
 }
@@ -122,88 +153,51 @@ button:active {
   font-size: 1rem;
   width: 20%;
 }
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-  padding-top: 10px;
+/*Other Projects*/
+h2 {
+  margin-left: 5%;
+  text-align: center;
+  font-size: 28px;
+  line-height: 50px;
+  padding-bottom: 32px;
 }
-
-html,
-body {
-  margin: 0;
-  padding: 0;
-  height: 100%;
+h3 {
+  font-size: 26px;
+  margin-left: 5%;
+  padding-bottom: 32px;
 }
-
-.header {
+.stuff {
   display: flex;
   flex-direction: column;
-  /* background-color: black; */
-  margin-left: 2%;
-  margin-right: 2%;
-  height: 80vh;
-  background-color: #000000;
-  background-image: linear-gradient(147deg, #000000 0%, #434343 74%);
 }
-
-h1 {
-  font-size: 32px;
+.card {
+  display: flex;
+  flex-direction: column;
+  margin-right: 6%;
+  height: 60vh;
+  border-radius: 10px;
+  margin-bottom: 12%;
+  margin-left: 6%;
+}
+.websites {
   color: white;
+  background-color: #28430a;
 }
-
-.bio {
-  margin: 0 20px;
-  text-align: center;
-  line-height: 1.5;
-  font-style: italic;
-}
-.title {
+.websites__paragraph {
   margin-left: 5%;
-  font-size: 10vh;
-  overflow: hidden; /* content is not revealed until the animation */
-  /*border-right: 0.09em solid #a64e43; The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  /* margin: 0 auto; Gives that scrolling effect as the typing happens */
-  letter-spacing: 0.12em;
-  animation: typing 6.5s steps(40, end), blinking 0.5s step-end infinite;
-  width: 87%;
+  padding-bottom: 32px;
+}
+.card__footer {
+  position: relative;
+  top: 113px;
+  margin-left: 5%;
+}
+.podcasts {
+  background-color: yellow;
 }
 
-.main__letter-k {
-  color: #a64e43;
-}
-
-.main__king-word {
-  color: #a64e43;
-}
-
-.main__question-mark {
-  color: #a64e43;
-  -webkit-animation: bounce-in-top 1s 11s both;
-  animation: bounce-in-top 1s 11s both;
-  display: inline-block;
-}
-
-.main__bounce-first {
-  -webkit-animation: bounce-in-top 7.1s both;
-  animation: bounce-in-top 7.1s both;
-  display: inline-block;
-  color: #a64e43;
-}
-
-.main__bounce-second {
-  -webkit-animation: bounce-in-top 10.1s both;
-  animation: bounce-in-top 10.1s both;
-  display: inline-block;
-  color: #a64e43;
-}
-
-.main__bounce-third {
-  -webkit-animation: bounce-in-top 1s 10s both;
-  animation: bounce-in-top 1s 10s both;
-  display: inline-block;
-  color: #a64e43;
+.food {
+  background-color: brown;
 }
 
 /*Animation*/
@@ -232,122 +226,11 @@ h1 {
   }
 }
 
-@-webkit-keyframes bounce-in-top {
-  0% {
-    -webkit-transform: translateY(-500px);
-    transform: translateY(-500px);
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in;
-    opacity: 0;
-  }
-  38% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-    -webkit-animation-timing-function: ease-out;
-    animation-timing-function: ease-out;
-    opacity: 1;
-  }
-  55% {
-    -webkit-transform: translateY(-65px);
-    transform: translateY(-65px);
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in;
-  }
-  72% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-    -webkit-animation-timing-function: ease-out;
-    animation-timing-function: ease-out;
-  }
-  81% {
-    -webkit-transform: translateY(-28px);
-    transform: translateY(-28px);
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in;
-  }
-  90% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-    -webkit-animation-timing-function: ease-out;
-    animation-timing-function: ease-out;
-  }
-  95% {
-    -webkit-transform: translateY(-8px);
-    transform: translateY(-8px);
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in;
-  }
-  100% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-    -webkit-animation-timing-function: ease-out;
-    animation-timing-function: ease-out;
-  }
-}
-
-@keyframes bounce-in-top {
-  0% {
-    -webkit-transform: translateY(-500px);
-    transform: translateY(-500px);
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in;
-    opacity: 0;
-  }
-  38% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-    -webkit-animation-timing-function: ease-out;
-    animation-timing-function: ease-out;
-    opacity: 1;
-  }
-  55% {
-    -webkit-transform: translateY(-65px);
-    transform: translateY(-65px);
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in;
-  }
-  72% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-    -webkit-animation-timing-function: ease-out;
-    animation-timing-function: ease-out;
-  }
-  81% {
-    -webkit-transform: translateY(-28px);
-    transform: translateY(-28px);
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in;
-  }
-  90% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-    -webkit-animation-timing-function: ease-out;
-    animation-timing-function: ease-out;
-  }
-  95% {
-    -webkit-transform: translateY(-8px);
-    transform: translateY(-8px);
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in;
-  }
-  100% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-    -webkit-animation-timing-function: ease-out;
-    animation-timing-function: ease-out;
-  }
-}
-
 /*Media Queries*/
 
 @media (min-width: 768px) {
   h1 {
     font-size: 45px;
-  }
-
-  .main {
-    flex-direction: column;
-    justify-content: space-between;
   }
 }
 </style>
