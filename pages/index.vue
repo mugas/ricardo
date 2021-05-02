@@ -5,7 +5,7 @@
         I create <span class="action">{{ actions[0] }} </span>and stuff
       </h1>
       <p class="subtitle">Developer, entrepreneur and constant learner</p>
-      <button>Let's Work together</button>
+      <button class="button__contact">Let's Work together</button>
     </header>
     <section class="stuff">
       <h2>Some of my projects</h2>
@@ -14,7 +14,7 @@
         <p class="websites__paragraph">
           Website and digital products for local producers and groceries
         </p>
-        <button>To the Website</button>
+        <button class="button_gscreations">To the Website</button>
         <p class="card__footer">Web development, Wordpress, SEO</p>
       </article>
       <article class="podcasts card">
@@ -84,6 +84,7 @@ body {
   margin-left: 2%;
   margin-right: 2%;
   height: 67vh;
+  border: 10px;
   background-color: #000000;
   background-image: linear-gradient(147deg, #000000 0%, #434343 74%);
 }
@@ -96,7 +97,7 @@ body {
   /* white-space: nowrap; Keeps the content on a single line */
   /* margin: 0 auto; Gives that scrolling effect as the typing happens */
   letter-spacing: 0.12em;
-  animation: typing 6.5s steps(40, end), blinking 0.5s step-end infinite;
+
   width: 93%;
   line-height: 50px;
   padding-bottom: 32px;
@@ -161,6 +162,9 @@ h2 {
   line-height: 50px;
   padding-bottom: 32px;
 }
+.button_gscreations {
+  width: 59%;
+}
 h3 {
   font-size: 26px;
   margin-left: 5%;
@@ -174,7 +178,7 @@ h3 {
   display: flex;
   flex-direction: column;
   margin-right: 6%;
-  height: 60vh;
+  /* height: 60vh; */
   border-radius: 10px;
   margin-bottom: 12%;
   margin-left: 6%;
@@ -182,6 +186,9 @@ h3 {
 .websites {
   color: white;
   background-color: #28430a;
+  margin-left: 2%;
+  margin-right: 2%;
+  height: 40vh;
 }
 .websites__paragraph {
   margin-left: 5%;
@@ -189,15 +196,19 @@ h3 {
 }
 .card__footer {
   position: relative;
-  top: 113px;
+
   margin-left: 5%;
 }
 .podcasts {
   background-color: yellow;
+  margin-left: 2%;
+  margin-right: 2%;
 }
 
 .food {
   background-color: brown;
+  margin-left: 2%;
+  margin-right: 2%;
 }
 
 /*Animation*/
@@ -229,8 +240,59 @@ h3 {
 /*Media Queries*/
 
 @media (min-width: 768px) {
-  h1 {
-    font-size: 45px;
+  .title {
+    font-size: 67px;
+    animation: typing 6.5s steps(40, end), blinking 0.5s step-end infinite;
+  }
+  .header {
+    height: 80vh;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .subtitle {
+    font-size: 31px;
+  }
+  .button__contact {
+    width: 15%;
+  }
+  .stuff {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 162vh;
+    justify-content: space-between;
+  }
+  .card__footer {
+    top: 113px;
+  }
+  .button_gscreations {
+    width: 15%;
+  }
+  .podcasts {
+    margin-left: 7%;
+    margin-right: 0;
+    height: 40vh;
+    width: 40%;
+  }
+
+  .food {
+    margin-right: 7%;
+    height: 40vh;
+    width: 40%;
+    margin-left: 0;
+  }
+
+  .websites {
+    color: white;
+    background-color: #28430a;
+    margin-left: 7%;
+    margin-right: 7%;
+    height: 67vh;
+    width: 100%;
+    margin-bottom: 5%;
+  }
+  h2 {
+    margin: 0 auto;
   }
 }
 </style>
