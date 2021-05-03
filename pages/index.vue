@@ -200,18 +200,16 @@ h3 {
 .websites {
   color: white;
   background-color: #28430a;
-  margin-left: 2%;
   display: flex;
   flex-direction: column;
-  margin-right: 2%;
-  /* height: 40vh; */
+  height: 100vh;
 }
 .website__image {
   background-image: url('~assets/images/gsimage.jpg');
   width: 100%;
   background-repeat: no-repeat;
   background-position: right;
-  margin-right: 22px;
+  height: 100%;
 }
 
 .websites__paragraph {
@@ -308,7 +306,12 @@ h3 {
   }
   .websites {
     display: flex;
+    margin-left: 2%;
+    margin-right: 2%;
     flex-direction: row;
+  }
+  .website__image {
+    margin-right: 22px;
   }
   img {
     width: 100%;
