@@ -5,17 +5,30 @@
         I create <span class="action">{{ actions[0] }} </span>and stuff
       </h1>
       <p class="subtitle">Developer, entrepreneur and constant learner</p>
-      <button class="button__contact">Let's Work together</button>
+      <NuxtLink to="/contact"
+        ><button class="button__contact">Let's Work together</button></NuxtLink
+      >
     </header>
     <section class="stuff">
       <h2>Some of my projects</h2>
       <article class="websites card">
-        <h3>Good Stuff Creations</h3>
-        <p class="websites__paragraph">
-          Website and digital products for local producers and groceries
-        </p>
-        <button class="button_gscreations">To the Website</button>
-        <p class="card__footer">Web development, Wordpress, SEO</p>
+        <div class="text">
+          <h3>Good Stuff Creations</h3>
+          <p class="websites__paragraph">
+            Website and digital products for local producers and groceries
+          </p>
+          <a href="http://gscreations.io/">
+            <button class="button_gscreations">To the Website</button></a
+          >
+          <p class="card__footer">Web development, Wordpress, SEO</p>
+        </div>
+        <div class="website__image">
+          <!--  <img
+            class="website_gscreations"
+            width="80px"
+            src="~/assets/images/gsimage.jpg"
+          /> -->
+        </div>
       </article>
       <article class="podcasts card">
         <h3>Podcast</h3>
@@ -155,6 +168,7 @@ button:active {
   width: 20%;
 }
 /*Other Projects*/
+
 h2 {
   margin-left: 5%;
   text-align: center;
@@ -187,9 +201,19 @@ h3 {
   color: white;
   background-color: #28430a;
   margin-left: 2%;
+  display: flex;
+  flex-direction: column;
   margin-right: 2%;
-  height: 40vh;
+  /* height: 40vh; */
 }
+.website__image {
+  background-image: url('~assets/images/gsimage.jpg');
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: right;
+  margin-right: 22px;
+}
+
 .websites__paragraph {
   margin-left: 5%;
   padding-bottom: 32px;
@@ -242,7 +266,11 @@ h3 {
 @media (min-width: 768px) {
   .title {
     font-size: 67px;
+    white-space: nowrap;
     animation: typing 6.5s steps(40, end), blinking 0.5s step-end infinite;
+  }
+  h3 {
+    margin-left: 10%;
   }
   .header {
     height: 80vh;
@@ -264,9 +292,32 @@ h3 {
   }
   .card__footer {
     top: 113px;
+    margin-left: 10%;
   }
   .button_gscreations {
-    width: 15%;
+    width: 31%;
+    margin-left: 10%;
+    padding: 10px;
+  }
+  .button_gscreations:hover {
+    background-color: transparent;
+    color: yellow;
+    border: 2px solid yellow;
+    font-size: 1rem;
+    width: 31%;
+  }
+  .websites {
+    display: flex;
+    flex-direction: row;
+  }
+  img {
+    width: 100%;
+  }
+  .text {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
   }
   .podcasts {
     margin-left: 7%;
@@ -281,7 +332,10 @@ h3 {
     width: 40%;
     margin-left: 0;
   }
-
+  .websites__paragraph {
+    margin-left: 10%;
+    font-size: 22px;
+  }
   .websites {
     color: white;
     background-color: #28430a;
