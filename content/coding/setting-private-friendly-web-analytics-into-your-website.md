@@ -24,7 +24,7 @@ First I installed Plausible into my project:
 npm install vue-plausible
 ```
 
-After installed open your `nuxt.config.js and in the module section:
+After installed open your `nuxt.config.js` and in the module section:
 
 ```js
 modules: [
