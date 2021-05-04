@@ -9,7 +9,6 @@
         </p>
         <p class="name">Ricardo Moreira</p>
         <p>firstname.lastname@gscreations.io</p>
-        <SocialMedia />
       </aside>
       <article>
         <div class="image">
@@ -86,16 +85,17 @@ body {
   font-size: 18px;
 }
 a {
-  box-shadow: inset 0 -1px 0 currentColor;
+  color: #28430a;
 }
-a:hover {
-  box-shadow: inset 0 0 0 currentcolor, 0 3px 0 currentcolor;
+a {
+  margin: 0;
 }
+
 .name {
   margin-bottom: 0;
 }
 .action {
-  color: #793000;
+  color: #28430a;
   font-size: 11.5vw;
   filter: brightness(2);
 }
@@ -120,6 +120,7 @@ aside {
   background-color: #793000;
   color: white;
   display: flex;
+  margin-top: 8%;
   flex-direction: column;
   justify-content: center;
   align-items: center;

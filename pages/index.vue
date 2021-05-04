@@ -177,11 +177,11 @@ h2 {
   padding-bottom: 32px;
 }
 .button_gscreations {
-  width: 59%;
+  width: 120%;
   color: #28430a;
 }
 .button_gscreations:hover {
-  width: 59%;
+  width: 120%;
 }
 h3 {
   font-size: 26px;
