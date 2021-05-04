@@ -10,6 +10,4 @@ h1 {
   margin-bottom: 2rem;
   margin-top: 2rem;
 }
-.footer {
-}
 </style>
