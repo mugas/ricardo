@@ -48,3 +48,5 @@ In case you have more than one website, Plausible lets you add as many websites 
 You can try the trial version, just register and you are free to go.
 
 I am happy with Plausible until the moment and gives exactly what I want, easy analytics with zero trackings.
+
+If you like this post, feel free to follow me on [Twitter](https://twitter.com/mugas11/) and send me a message in case you have any doubt about this post 😊
