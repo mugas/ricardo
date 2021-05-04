@@ -1,6 +1,6 @@
 <template>
   <section>
-    <h1>Learn more about my business created and the ones in development</h1>
+    <h1>What I have been creating</h1>
     <div class="about__cards">
       <vue-flip
         class="about__single-card"
@@ -16,17 +16,16 @@
         <template v-slot:back>
           <p class="about__text">
             Good Stuff Creations is focused in web development. There I create
-            web-apps focused in small business, helping them and their brand to
-            grow digitally.
+            web-apps focused local producers and groceries, helping them and
+            their brand to grow digitally.
           </p>
           <p class="about__text">
-            This can be made with web site creation and development.I also
-            develop digital marketing and content creation strategies and
-            opportunities.
+            Can be a simple webpage or a more complex product, the point is that
+            in the end, your product reaches more people more easily.
           </p>
           <p class="about__text">
-            Because of my strong background in hospitality I developed a special
-            package focused in hospitality business
+            Because of my strong background in hospitality and passion for the
+            business I can help you achieving the best strategy for it.
           </p>
           <SocialMediaCreations class="main__media" />
         </template>

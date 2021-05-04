@@ -23,32 +23,34 @@
             <a href="http://gscreations.io/"> Good Stuff Creations</a>.
           </p>
           <p>
-            There I create web products mostly for small business, helping them
-            to grow their presence online, with websites, digital markketing and
-            SEO. I also create tutorials about coding where hopefully I can help
+            There I create web products focused on local producers and
+            groceries, helping them to grow their presence online, with
+            websites, and SEO.I love the passion local producers put in their
+            products and I want to help them share their message to more people
+            and sell more products.
+          </p>
+          <p>
+            I also create tutorials about coding where hopefully I can help
             someone to learn something about coding. As a parent who had(has)
             day job was a challenge to find the time to code while have to work
             and spending time with the kids and wife, so I pretend to help any
             coding parent out there.
           </p>
           <p>
-            Web development was not always my life as I spent many years working
-            for hospitality. From bars, hotel to restaurants, from waiter to
-            kitchen helper, manager, or owner I did a bit of all. So even that I
-            work in web development I still work in hospitality as a Manager in
-            a Restaurant.
+            Besides web development, I am passionated about food. It's where I
+            have been working mostly all my life.I am creating now a new service
+            that will focus on local producers and tasty food. More news coming
+            soon.
           </p>
           <p>
-            As a kid in a toy store, I easily get interested about new projects
-            and ideas, so I am preparing a new project this one more food based
-            and focused in local produce. In this webpage you can get to know a
-            bit more about my projects and also about other things that interest
-            me like music, food and other subjects. Keep an eye on my
+            In this webpage you can get to know a bit more about my projects and
+            also about other things that interest me like music, food and other
+            subjects. Keep an eye on my
             <nuxt-link to="/blog"> Blog</nuxt-link> as I try to updated weekly.
             feel free to connect with me
             <nuxt-link to="/contact">here</nuxt-link> or with the
             <a href="https://twitter.com/mugas11">bluebird</a>
-            help for any question that may arise you.
+            for any question that may arise you.
           </p>
         </div>
       </article>

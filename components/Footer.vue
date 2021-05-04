@@ -10,18 +10,33 @@
 <style lang="scss">
 .footer {
   display: flex;
+  flex-direction: column;
   height: 100%;
   width: 100%;
   justify-content: space-between;
   align-items: center;
-  padding: 2rem 0;
+
   color: black;
-  @media (max-width: 567px) {
-    padding: 1.2rem 0;
-  }
-  > * {
-    margin-left: 2%;
-    margin-right: 2%;
+}
+a {
+  display: inline-block;
+  margin: 1.15em;
+  position: relative;
+  font-size: 1.25em;
+  transition: all 265ms ease-out;
+  color: #a64e43;
+}
+
+@media (min-width: 768px) {
+  .footer {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 2rem;
+    color: black;
   }
 }
 </style>

@@ -157,7 +157,7 @@ button:hover {
   color: yellow;
   border: 2px solid yellow;
   font-size: 1rem;
-  width: 20%;
+  width: 59%;
 }
 
 button:active {
@@ -165,7 +165,7 @@ button:active {
   color: yellow;
   border: 2px solid yellow;
   font-size: 1rem;
-  width: 20%;
+  width: 59%;
 }
 /*Other Projects*/
 
@@ -177,6 +177,10 @@ h2 {
   padding-bottom: 32px;
 }
 .button_gscreations {
+  width: 59%;
+  color: #28430a;
+}
+.button_gscreations:hover {
   width: 59%;
 }
 h3 {
@@ -198,8 +202,8 @@ h3 {
   margin-left: 6%;
 }
 .websites {
-  color: white;
-  background-color: #28430a;
+  color: #28430a;
+  background-color: #edbd54;
   display: flex;
   flex-direction: column;
   height: 100vh;
@@ -222,15 +226,16 @@ h3 {
   margin-left: 5%;
 }
 .podcasts {
-  background-color: yellow;
-  margin-left: 2%;
-  margin-right: 2%;
+  background-color: #231e36;
+  margin-left: 6%;
+  margin-right: 6%;
+  color: white;
 }
 
 .food {
-  background-color: brown;
-  margin-left: 2%;
-  margin-right: 2%;
+  background-color: #a64e43;
+  margin-left: 6%;
+  margin-right: 6%;
 }
 
 /*Animation*/
@@ -265,7 +270,7 @@ h3 {
   .title {
     font-size: 67px;
     white-space: nowrap;
-    animation: typing 6.5s steps(40, end), blinking 0.5s step-end infinite;
+    animation: typing 6.5s steps(60, end), blinking 0.5s step-end infinite;
   }
   h3 {
     margin-left: 10%;
@@ -299,8 +304,8 @@ h3 {
   }
   .button_gscreations:hover {
     background-color: transparent;
-    color: yellow;
-    border: 2px solid yellow;
+    color: #28430a;
+    border: 2px solid #28430a;
     font-size: 1rem;
     width: 31%;
   }
@@ -308,6 +313,7 @@ h3 {
     display: flex;
     margin-left: 2%;
     margin-right: 2%;
+    background-color: #edbd54;
     flex-direction: row;
   }
   .website__image {
@@ -330,6 +336,7 @@ h3 {
   }
 
   .food {
+    background-color: #a64e43;
     margin-right: 7%;
     height: 40vh;
     width: 40%;
@@ -340,8 +347,8 @@ h3 {
     font-size: 22px;
   }
   .websites {
-    color: white;
-    background-color: #28430a;
+    color: #28430a;
+    background-color: #edbd54;
     margin-left: 7%;
     margin-right: 7%;
     height: 67vh;
