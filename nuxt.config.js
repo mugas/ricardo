@@ -3,6 +3,9 @@ import codings from './content/codings.json'
 
 export default {
   mode: 'universal',
+  plausible: {
+    domain: 'http://ricardomoreira.io/'
+  }
 
   /*
    ** Headers of the page
@@ -109,6 +112,7 @@ export default {
     '@nuxtjs/robots',
     'nuxt-webfontloader',
     'nuxt-fontawesome',
+    'vue-plausible',
   ],
 
   /**
