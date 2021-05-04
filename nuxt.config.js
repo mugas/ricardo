@@ -112,7 +112,7 @@ export default {
     'vue-plausible',
   ],
   plausible: {
-    domain: 'http://ricardomoreira.io/',
+    domain: 'ricardomoreira.io',
   },
 
   /**
@@ -198,6 +198,9 @@ export default {
    ** Build configuration
    */
   build: {
+    babel: {
+      plugins: [['@babel/plugin-proposal-private-methods', { loose: true }]],
+    },
     /*
      ** You can extend webpack config here
      */
