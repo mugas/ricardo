@@ -20,7 +20,7 @@
 }
 a {
   display: inline-block;
-  margin: 1.15em;
+
   position: relative;
   font-size: 1.25em;
   transition: all 265ms ease-out;
