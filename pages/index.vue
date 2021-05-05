@@ -286,6 +286,13 @@ h3 {
   .button__contact {
     width: 15%;
   }
+  .button__contact:hover {
+    background-color: transparent;
+    color: yellow;
+    border: 2px solid yellow;
+    font-size: 1rem;
+    width: 15%;
+  }
   .stuff {
     display: flex;
     flex-direction: row;
